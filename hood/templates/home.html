@@ -1,0 +1,99 @@
+<style>
+body{
+  background: azure;
+}
+</style>
+{% extends 'base.html'%}
+
+{% block content%}
+<div class="container-fluid">
+  <div class="row">
+    <div id="header-section">
+      <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img src="http://livinggreenyoga.co.uk/wp-content/uploads/2018/05/26917863628_05d39f92e7_o.jpg"
+            alt="First slide" class="img-fluid" height="0px" width="4000px">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption" style="color:black;background:rgba(184, 160, 160, 0.822)">
+          <h3 class="h3-responsive">The get togethers!</h3>
+          <p>Colorful places to live with your family and good enviroment for your kids.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img src="http://www.k2developmentgroup.com.au/wp-content/uploads/2017/08/aureus-n001r587-2000px.jpg"
+            alt="Second slide" class="img-fluid" height="450px">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption" style="color:black;background:rgba(184, 160, 160, 0.822)">
+          <h3 class="h3-responsive">Some construction coming up in the hood.</h3>
+          <p>Colorful places to live and play.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <img src="https://peopledotcom.files.wordpress.com/2019/02/kids-school-4.jpg?w=2000&h=1333"
+              alt="Second slide" class="img-fluid" height="450px">
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <div class="carousel-caption" style="color:black;  background:rgba(184, 160, 160, 0.822)">
+            <h3 class="h3-responsive">Cherished moments can't be forgotten</h3>
+            <p>Colorful places to live and play.</p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+    </div>
+  </div>
+  <div class="text-center" id="hoods">
+      <h2 class="text-center" style="font-size:larger; color:white;">Neighbourhoods</h2>
+      <a href="{%url 'newHood'%}"><button class="btn btn-success" style="font-size:larger; ">Add Neighborhood</button></a><br>
+    </div><br>
+  <div class="container-fluid row" style=" background:black; color:blanchedalmond;">
+    <div id="find-your-hood" >
+        
+        {% for hood in  hoods %}
+        <div class="col-md-4 hood-section text-center" >
+          <div class="view overlay z-depth-5" style="border:floralwhite" >
+            <img src="{{hood.hood_image.url}}" alt="Hood" class="img-fluid wow zoomInUp">           
+            <a href="{%url 'map'%}"><div class="mask flex-center rgba-green-light"style="background:red">
+              <p class="white-text"><button class="btn btn-warning">View Neighbourhood</button></p>
+            </div></a>             
+          </div>  
+          <p>{{hood.name}}</p>  
+          <a href="{%url 'hood-details' neighborhood_id=hood.id%}"><button class="btn btn-primary">View Businesses</button></a>   
+        </div>
+        {% endfor %}
+        
+      </div>
+  </div>  
+</div>
+{% endblock %}

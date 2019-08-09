@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <div class="container-fluid" style="background:rgba(0, 0, 0, 0.712)">
+    <div class="row business-section">
+      
+      <div class="col-md-1"></div>
+      <div class="col-md-10 ">
+        {% for myhood in hood %}
+        <h2 class="text-center" style="color:burlywood">
+          <em><strong>{{myhood.name}}</strong></em>
+        </h2>
+        <hr>
+        <div class="col-md-6 hood-dets view overlay zoom text-center">
+          <img src="{{myhood.hood_image.url}}" class="rounded-circle" style="width:600px;height:600px" alt="Neighborhood" class="img-fluid z-depth-3">
+          <div class="mask flex-center rgba-green-slight">
+            <p class="white-text" style="color:burlywood">Choose a Home.</p>
+          </div>
+        </div>        
+        {% endfor %}
+        <div><a href="{% url 'newBusiness'%}" ><button class="btn btn-warning">Add
+              Business</button></a></div>
+        <div class="business-desc text-center">
+          {%for business in found%}          
+          <div>
+            <span class="text-highlight" style="color:yellow; text-decoration: underline"><h2>Businesses</h2></span>
+            <table class="table">
+              <thead>
+                  <tr style="color:green">
+                    <th>#</th>
+                    <th>Business Name</th>
+                    <th>Email Contact</th>
+                    <th>Description </th>
+                    <th>Neighbour posted</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-info">
+                    <th scope="row">1</th>
+                    <td>{{business.name}}</td>
+                    <td>{{business.business_mail}}</td>
+                    <td>{{business.description}}</td>
+                    <td><cite>{{business.user.username}}</cite></td>                   
+                  </tr>
+                </tbody>
+            </table>            
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      
+    </div>
+  </div>
+{% endblock %}

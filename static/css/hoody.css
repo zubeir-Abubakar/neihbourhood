@@ -1,0 +1,83 @@
+
+body{
+  /* font-family: 'Sawarabi Gothic', sans-serif; */
+  font-size:x-large;
+  
+}
+.card,.container{
+  background:black;
+  color: aliceblue; 
+}
+.navbar{
+  font-family: 'Sawarabi Gothic', 'sans-serif';
+  font-size: large;
+  background-color: rgba(86, 23, 145, 0.671);
+}
+#in,#out,#signup,#home,#hoods-link{
+  text-decoration: none;
+  color:white; 
+  font-size: large;
+  border-radius: 10px;
+  margin: 10px;
+  background: black;
+}
+#in:hover,#out:hover,#signup:hover,#home:hover,#hoods-link:hover{
+  text-decoration: underline;
+  color: wheat; 
+}
+.auth,.new-add{
+  margin-top: 3%;   
+}
+.formbg{
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.auth-form{
+  background-color:  rgba(175, 39, 39, 0.5);
+  color: white;
+  border-radius:40px;
+}
+#hood-icon a{
+  margin-left: 0px;
+}
+.btn-outline-success{
+  border-radius: 50px;
+}
+.border{
+  border-width: thick 0px 0px 0px;
+  border-color: white;
+}
+.overlay{
+  margin-bottom: 4%;
+}
+#hoods,.animated,.business-section,.search-page{
+  margin-top: 3%;
+}
+.text-highlight{
+  color: #008000;
+}
+.wow {
+  visibility: hidden;
+}
+#find-your-hood{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 3%;
+}
+th,td{
+  font-size: 1.3rem !important;
+}
+.search-title{
+  margin-bottom: 3%;
+  padding: 5%;
+  border: 3px solid green;
+}
+.found{
+  float: left;
+  margin-right: 3%;
+}
+.result-details{
+  background-color:  rgba(47,79,79,0.3);
+  padding: 3%;
+}
