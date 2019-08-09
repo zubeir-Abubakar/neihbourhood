@@ -34,5 +34,4 @@ The application is built on:
 * Postgresql database
 * VS code
 ## Support and contact details
-For any queries and suggestions, please contact the support team via **Tel No: +254 743046778** or **Email: zubkayare@gmail.com**
-
+For any issue feel free to contact me through * +254743046778 * or even * zubkayare@gmail.com *
