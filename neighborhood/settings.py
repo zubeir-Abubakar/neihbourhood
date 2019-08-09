@@ -62,6 +62,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'bootstrap3',
     'hood.apps.HoodConfig',
     'django.contrib.admin',
@@ -83,7 +84,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'neighborhood.urls'
+ROOT_URLCONF = 'neighborhood.url'
 
 TEMPLATES = [
     {
