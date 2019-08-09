@@ -6,10 +6,10 @@
       <div class="col-md-8">
         {% if businesses %}
         <div class="text-center search-title">
-          <h2> Found {{businesses|length}} results of searched {{message}}. </h2>
+          <h2 style="color:aliceblue"> Found {{businesses|length}} results of searched {{message}}. </h2>
         </div>        
       {% else %}
-        <h2 style="color:brown"> Found 0 business with that name, {{message}}. </h2><br>
+        <h2 style="color:aliceblue"> Found 0 business with that name, {{message}}. </h2><br>
         <img src="https://media3.giphy.com/media/h4OGa0npayrJX2NRPT/giphy.gif?cid=790b76111e0bc4e2279e9424c1e828887b38fbf9fe5246cc&rid=giphy.gif" alt="gif" style="width: 400px; margin-left: 200px">
       {% endif %}
     
