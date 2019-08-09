@@ -1,11 +1,10 @@
 # Neighborhood
 
-#### An application that allows users living in the same neighborhood to stay upto date with the businesses in thier area. Keep in touch with the home area loop and community feel wherever.
+ this is a platform that allows users living in the same neighborhood to stay upto date with the businesses in thier area. Keep in touch with the home area loop and community feel wherever.
 
-#### By Faith Kazungu
+#### By Zubeyr Abubakar
 
 ## Description
-Deployed to: https://f-hood.herokuapp.com/
 This is a web platform for users in the same neighborhood stay in touch of the neighborhood activities and on going businesses. Users create an account to join a neighborhood community and can share of any business and it's more detailed information needed to be known to other neighbours of the same neighborhood. Users can search for businesses and view their areas found.
 
 ## Setup/Installation Requirements
@@ -24,22 +23,23 @@ This is a web platform for users in the same neighborhood stay in touch of the n
 | User can view businesses of related neighborhood | Clicks view businesses button | Redirected to neighborhood details page |
 
 ## Known Bugs
-Some of the features are still under development, these include; sharing comments. Aside from these, the application runs well. In case you come across any errors or failure of the application other than the one mentioned, do reach out via email: *faithmugesia@gmail.com*
+Some of the features are still under development, these include; sharing comments. Aside from these, the application runs well. In case you come across any errors or failure of the application other than the one mentioned, do reach out via email: *zubkayare@gmail.com*
 
 ## Technologies Used
 The application is built on:
-* Python3.6.8
+* Python3.6.4
 * JavaScript and JQuery
 * Bootstrap 3
 * Django 1.11 framework
 * Postgresql database
+* VS code
 ## Support and contact details
-For any queries and suggestions, please contact the support team via **Tel No: +254 798 578613** or **Email: faithmugesia@gmail.com**
+For any queries and suggestions, please contact the support team via **Tel No: +254 743046778** or **Email: zubkayare@gmail.com**
 
 ### License
 *MIT License*
 
-*Copyright (c) [2019] [Faith Kazungu]*
+*Copyright (c) [2019] [zubeyr Abubakar]*
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -58,5 +58,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*
-Copyright (c) 2019 **Faith Kazungu**
+Copyright (c) 2019 **Zubeyr Abubakar**
 
